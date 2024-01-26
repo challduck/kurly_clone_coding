@@ -1,0 +1,16 @@
+#goTop {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: -50px;
+  right: 40px;
+  z-index: 4;
+  transition: all 0.3s ease-in-out;
+}
+#goTop a {
+  display: inline-flex;
+}
+#goTop a img {
+  width: 100%;
+}

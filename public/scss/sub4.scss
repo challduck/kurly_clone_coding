@@ -1,0 +1,37 @@
+#wrap{
+    width:100%;
+    #sub4 {
+        width:100%;
+        #section1 {
+            width:100%;
+            .container {
+                width:100%;
+                max-width: 1050px;
+                margin: 0 auto;
+                .gap {
+                    width:100%;
+                    .content {
+                        width:100%;
+                        ul {
+                            width:100%;
+                            li {
+                                width:100%;
+                                padding: 0 0 10px 0;
+                                a {
+                                    display: block;
+                                    width:100%;
+                                    div {
+                                        width:100%;
+                                        img {
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

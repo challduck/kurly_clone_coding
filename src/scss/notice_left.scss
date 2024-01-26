@@ -1,0 +1,69 @@
+#noticeLeft {
+    width:200px;
+   > .container {
+    width:100%;
+        .title{
+            width:100%;
+            padding: 0 0 40px 0;  
+            height: 68px;                  
+            h2{
+                font-size: 28px;
+                font-weight: 600;
+                color:#333;
+                font-family: 'Nanum Gothic';
+            }
+        }
+        .nav{
+            width:100%;
+            ul{
+                width:100%;
+                border: 1px solid #eee;
+                li {
+                    width:100%;
+                    border-top:1px solid #ddd;
+                    &:first-child {
+                        border-top: 0;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        width: 100%;
+                        color:#333;
+                        font-weight: 600;
+                        text-indent: 20px;
+                        transition: all 0.3s;
+                        background: url(../../public/images/notice/icon_arrow_right.svg) no-repeat calc(100% - 15px) 50%;
+                        background-size: 19px 19px;
+                        &.on{
+                            color:#5f0080;
+                            background-color:#fafafa;
+                            background-image: url(../../public/images/notice/icon_arrow_right_on.svg);
+                        }
+                        &:hover{
+                            color:#5f0080;
+                            background-color:#fafafa;
+                            background-image: url(../../public/images/notice/icon_arrow_right_on.svg);
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            padding: 40px 0 0 0;
+            width:100%;
+            a { 
+                line-height: 160%;
+                display: block;
+                padding: 15px 0 10px 0;
+                text-indent: 20px;
+                background:#fafafa url(../../public/images/notice/icon_arrow_right_gray.svg) no-repeat calc(100% - 15px) 50%;
+                background-size: 19px 19px;
+                span {color:#333;font-size: 13px;display:block;font-weight: 500;letter-spacing: -2px;}
+                em {font-size: 12px;display:block;}
+            }
+            
+        }
+
+   }
+}

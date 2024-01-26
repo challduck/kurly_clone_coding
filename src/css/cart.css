@@ -1,0 +1,393 @@
+#cart {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 70px 0 100px 0;
+}
+#cart .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#cart .container .gap {
+  width: 100%;
+}
+#cart .container .gap .title {
+  width: 100%;
+  padding: 0 0 70px 0;
+}
+#cart .container .gap .title h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+#cart .container .gap .content {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+#cart .container .gap .content .left {
+  width: 740px;
+}
+#cart .container .gap .content .left > ul {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li:first-child span button, #cart .container .gap .content .left > ul > li:last-child span button {
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  height: 30px;
+}
+#cart .container .gap .content .left > ul > li:first-child span button:first-of-type, #cart .container .gap .content .left > ul > li:last-child span button:first-of-type {
+  padding: 0 0 0 35px;
+  background: transparent url(../../public/images/cart/icon_check_off.svg) no-repeat 0 50%;
+  background-size: 24px 24px;
+}
+#cart .container .gap .content .left > ul > li:first-child span button:first-of-type strong, #cart .container .gap .content .left > ul > li:last-child span button:first-of-type strong {
+  margin: 0 0 0 5px;
+}
+#cart .container .gap .content .left > ul > li:first-child span button:first-of-type strong em, #cart .container .gap .content .left > ul > li:last-child span button:first-of-type strong em {
+  margin: 0 1px;
+}
+#cart .container .gap .content .left > ul > li:first-child span button:first-of-type strong i, #cart .container .gap .content .left > ul > li:last-child span button:first-of-type strong i {
+  margin: 0 1px;
+}
+#cart .container .gap .content .left > ul > li:first-child span button.on.select-all-btn, #cart .container .gap .content .left > ul > li:last-child span button.on.select-all-btn {
+  background-image: url(../../public/images/cart/icon_check_on.svg);
+}
+#cart .container .gap .content .left > ul > li:first-child span button.delete-btn, #cart .container .gap .content .left > ul > li:last-child span button.delete-btn {
+  cursor: default;
+}
+#cart .container .gap .content .left > ul > li:first-child span button.delete-btn.on, #cart .container .gap .content .left > ul > li:last-child span button.delete-btn.on {
+  cursor: pointer;
+  color: #333;
+}
+#cart .container .gap .content .left > ul > li:first-child span > i, #cart .container .gap .content .left > ul > li:last-child span > i {
+  font-size: 12px;
+  color: #bbb;
+  font-weight: 400;
+  margin: 0 15px;
+}
+#cart .container .gap .content .left > ul > li:first-child {
+  padding: 0 0 15px 0;
+}
+#cart .container .gap .content .left > ul > li:last-child {
+  padding: 15px 0 0 0;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) p.empty-box {
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 600;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div {
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt {
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div {
+  padding: 15px 0;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div:first-child img {
+  width: 30px;
+  margin: 0 10px 0 0;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div:first-child h3 {
+  display: inline-flex;
+  width: 60px;
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div:last-child button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div:last-child button img {
+  width: 30px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dt div:last-child button img.on {
+  transform: rotate(-180deg);
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd.on {
+  height: 0;
+  overflow: hidden;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul {
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(1) {
+  width: 40px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(1) input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: url(../../public/images/cart/icon_check_off.svg) no-repeat 50% 50%;
+  background-size: 24px 24px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(1) input[type=checkbox]:checked {
+  background-image: url(../../public/images/cart/icon_check_on.svg);
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(2) {
+  width: 60px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(2) span {
+  width: 60px;
+  height: 78px;
+  display: block;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(2) span img {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(3) {
+  width: 388px;
+  padding: 0 0 0 15px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(3) a {
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) {
+  width: 88px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div {
+  width: 88px;
+  display: flex;
+  border: 1px solid #ccc;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div button {
+  width: 33.333%;
+  height: 28px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div button:first-of-type {
+  background: url(../../public/images/cart/icon_sub.svg) no-repeat 50% 50%;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div button:first-of-type.on {
+  background-image: url(../../public/images/cart/icon_sub_gray.svg);
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div button:last-of-type {
+  background: url(../../public/images/cart/icon_add.svg) no-repeat 50% 50%;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(4) div strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.333%;
+  height: 28px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(5) {
+  width: 127px;
+  text-align: right;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(5) span {
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(6) {
+  width: 39px;
+  padding: 0 0 0 9px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) > div dl dd ul li:nth-child(6) a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../../public/images/cart/icon_del.svg) no-repeat 50% 50%;
+}
+#cart .container .gap .content .right {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  width: 310px;
+  overflow-y: auto;
+  padding: 45px 0 0 26px;
+  height: auto;
+}
+#cart .container .gap .content .right > ul > li:first-child {
+  background: #fff;
+  border: 1px solid #efefef;
+  padding: 23px 19px 20px 19px;
+  line-height: 180%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+#cart .container .gap .content .right > ul > li:first-child h3 {
+  padding: 0 0 8px 0;
+}
+#cart .container .gap .content .right > ul > li:first-child h3 img {
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+  transform: translateY(-3px);
+}
+#cart .container .gap .content .right > ul > li:first-child p {
+  padding: 0 0 15px 0;
+}
+#cart .container .gap .content .right > ul > li:first-child p em {
+  color: #5f0080;
+}
+#cart .container .gap .content .right > ul > li:first-child button {
+  width: 100%;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px solid #5f0080;
+  color: #5f0080;
+  background: #fff;
+  cursor: pointer;
+}
+#cart .container .gap .content .right > ul > li:first-child button img {
+  width: auto;
+  transform: translateY(-1.5px);
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) {
+  background: #f2f2f2;
+  padding: 23px 19px 20px 19px;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div {
+  line-height: 180%;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 {
+  width: 100%;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p {
+  width: 100%;
+  padding: 7px 0;
+  color: #333;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p strong:nth-child(1) {
+  font-size: 16px;
+  font-weight: 500;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p strong:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p span {
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  padding: 5px 0 10px 0;
+  font-size: 12px;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p:nth-child(4) {
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #5f0080;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row1 p:nth-child(4) em {
+  font-weight: 600;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 {
+  width: 100%;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p {
+  width: 100%;
+  padding: 7px 0;
+  color: #333;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p strong {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p:nth-child(1) strong:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p:nth-child(2) {
+  width: 100%;
+  justify-content: flex-end;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p:nth-child(2) strong {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+#cart .container .gap .content .right > ul > li:nth-child(2) div.row2 p:nth-child(2) strong em {
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  display: inline-flex;
+  padding: 0 8px;
+  border-radius: 11px;
+  background: #ffbf00;
+  margin: 0 5px 0 0;
+}
+#cart .container .gap .content .right > ul > li:last-child {
+  background: #fff;
+  padding: 23px 0 20px 0;
+}
+#cart .container .gap .content .right > ul > li:last-child button {
+  width: 100%;
+  height: 56px;
+  background: #ddd;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+#cart .container .gap .content .right > ul > li:last-child p {
+  padding: 20px 5px;
+  line-height: 160%;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: -0.7px;
+}

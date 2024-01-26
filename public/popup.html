@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주소검색 API</title>
+    <link rel="stylesheet" href="./css/popup.css">
+    <script src="./js/lib/postcode.v2.js"></script>
+
+
+</head>
+<body  onLoad="sample2_execDaumPostcode();">
+<div id="wrap">
+
+    <!-- 주소 검색 내용 바인딩 폼 -->
+    <div class="container">
+        <div class="gap">
+            <div class="title">
+                <h1><strong>샛별배송</strong><span> 지역입니다.</span></h1>
+                <h2>매일 새벽, 문 앞까지 신선함을 전해드려요.</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <div class="input-box box1">
+                            <!-- 우편번호   주소1   엑스트라어드레스 -->
+                            <input type="text" name="api_addr1" id="apiAddr1" placeholder="주소검색 API 검색 주소 바인딩">
+                            <button  onClick="sample2_execDaumPostcode();"><img src="./images/sign_up/search.svg" alt="">재검색</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-box box2">
+                            <input type="text" name="api_addr2" id="apiAddr2" placeholder="나머지 주소를 입력해 주세요">
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            ※ 저장된 배송지는 최대 7일 간 임시 저장 후 자동 삭제됩니다.<br>
+                            로그인 할 경우, 회원님의 배송지 목록에 추가됩니다.
+                        </p>
+                    </li>
+                    <li>
+                        <button class="save" type="button">저장</button>
+                    </li>
+                    <li>
+                        <h4><img src="./images/popup/notice_14_14_f03f40.svg" alt="">샛별배송 지역 중 배송불가 장소 안내</h4>
+                    </li>
+                    <li>
+                        <h5>관공서 / 학교 / 병원 / 시장 / 공단지역 / 산간지역 / 백화점 등</h5>
+                        <a  class="more-view-btn"  href="#">자세히 보기<img src="./images/popup/ico_arrow_down_11x10.svg" alt=""></a>
+                        <div class="sub">
+                            <ul>
+                                <li>가락동농수산물도매시장</li>
+                                <li>가락동농수산물시장</li>
+                                <li>가천대학교</li>
+                                <li>고려대학교안암캠퍼스</li>
+                                <li>고매동 일부(일부지역만 배송가능)</li>
+                                <li>국립중앙박물관</li>
+                                <li>국민대학교</li>
+                                <li>덕성여자대학교</li>
+                                <li>덕양구 신원동 일부(일부지역만 배송가능)</li>
+                                <li>도내동 일부(원흥지구만 배송가능)</li>
+                                <li>동덕여자대학교</li>
+                                <li>반월특수지구</li>
+                                <li>서경대학교</li>
+                                <li>서울사이버대학교</li>
+                                <li>서울시립대학교</li>
+                                <li>서울여자대학교</li>
+                                <li>성균관대학교</li>
+                                <li>성신여자대학교</li>
+                                <li>세종대학교</li>
+                                <li>연세대학교</li>
+                                <li>이화여자대학교</li>
+                                <li>한국외국어대학교</li>
+                                <li>홍익대학교</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 주소검색 API 스크립트 -->
+    <div id="root"></div>
+
+    <SCript>
+            // 팝업창 하단 자세히 보기 토글 클래스
+            const moreViewBtn = document.querySelector('.more-view-btn');
+            const sub = document.querySelector('.sub');
+            moreViewBtn.addEventListener('click', function(){
+                sub.classList.toggle('on');
+            });
+
+
+            // 우편번호 찾기 화면을 넣을 element
+            const  element_layer = document.getElementById('root');
+            let extra = '';
+
+            
+            // 자식창(팝업창) 에서 부모창에 데이터 전송하기 /////////////////////
+            const saveBtn = document.querySelector('.save');
+
+//////////////////////// 최상위 컴포넌트에서 상태관리로 구현 변경 //////////////////////////////////////////////////////////////////////////////
+            // 저장 버튼 클릭하면
+            saveBtn.addEventListener('click', function(){
+                // 세션스토레이지에 저장하기
+                const addr = {
+                    주소1: document.getElementById("apiAddr1").value,
+                    주소2: document.getElementById("apiAddr2").value
+                }
+                const key = "MJADDRESS";
+                
+                // 부모창에 콘솔과 스토레이지에 저장한다.
+                opener.sessionStorage.setItem(key, JSON.stringify(addr));
+                // opener.window.location.reload(); // 새로고침
+                window.close(); // 창닫기
+                // 창닫고
+                // 그리고 세션 스토레이지 저장소에서 데이터 가졍오기
+                // 최상위 컴포넌트의 상태관리 변수 
+                // addr.주소1, addr.주소2, addr.isAddr 값 변경한다. 
+            });
+
+
+            // 카카오 주소검색 API 함수
+            function sample2_execDaumPostcode() {
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                        // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                        // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                        var addr = ''; // 주소 변수
+                        var extraAddr = ''; // 참고항목 변수
+
+                        //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                        if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                            addr = data.roadAddress;
+                        } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                            addr = data.jibunAddress;
+                        }
+
+                        // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                        if(data.userSelectedType === 'R'){
+                            // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                            // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                            if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                                extraAddr += data.bname;
+                            }
+                            // 건물명이 있고, 공동주택일 경우 추가한다.
+                            if(data.buildingName !== '' && data.apartment === 'Y'){
+                                extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                            }
+                            // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                            if(extraAddr !== ''){
+                                extraAddr = ' (' + extraAddr + ')';
+                            }
+
+                            // 1. 조합된 참고항목을 해당 필드에 넣는다.
+                            extra = extraAddr;
+                        
+                        } else {
+                            extra = '';
+                        }
+
+                        
+                        // 2. 우편번호와 주소1 정보를 해당 필드에 넣는다.  =  우편번호 + 주소1 + 엑스트라주소
+                        document.getElementById("apiAddr1").value = `${data.zonecode} ${addr} ${extra}`;
+
+                        // 3. 커서를 상세주소(나머지주소) 주소2 필드로 이동한다.
+                        //    나머지 주소입력 그리고 저장 버튼 클릭 이벤트 구현한다. 창닫기 종료
+                        document.getElementById("apiAddr2").focus();
+
+
+
+                        // iframe을 넣은 element를 안보이게 한다.
+                        // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                        element_layer.style.display = 'none';
+
+                    },
+                    width : '100%',
+                    height : '100%',
+                    maxSuggestItems : 5
+                }).embed(element_layer);
+
+                // iframe을 넣은 element를 보이게 한다.
+                element_layer.style.display = 'block';
+
+            }
+
+
+
+
+    </SCript>    
+
+</div>    
+</body>
+</html>

@@ -1,0 +1,137 @@
+#notice {
+    width:100%;
+    padding: 70px 0 100px 0;
+    #container {
+        width:100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        #noticeRight {
+            width:850px;
+            padding: 0 0 0 30px;
+            .container {
+                width:100%;
+               .title {
+                height: 68px;                
+                h3 {
+                    height: 28px;
+                    font-size: 24px;
+                    color: #333;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        color: #999;
+                        font-size: 14px;
+                        margin: 0 0 0 10px;
+                    }
+                }
+               } 
+               .content {
+                    width:100%;                    
+                    dl {
+                        width:100%; 
+                        dt {
+                            width:100%; 
+                            display: flex;
+                            align-items: center;
+                            border-top:2px solid #333;
+                            height: 63px;
+                            border-bottom:1px solid #ccc;
+                            text-align: center;
+                            span{                                
+                                &:nth-child(1){width:50px}
+                                &:nth-child(2){width:570px}
+                                &:nth-child(3){width:100px}
+                                &:nth-child(4){width:100px}
+                            }
+                        }
+                        dd {
+                            width:100%;   
+                            height: 50px;
+                            border-bottom:1px solid #ddd;   
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover {
+                                background: #f7f7f7;
+                            }   
+                            &:nth-of-type(odd){
+                                background: #fcfcfc;
+                            }
+                            
+
+                            span{
+                                text-align: center;
+                                &:nth-child(1){width:50px}
+                                &:nth-child(2){
+                                    width:570px;
+                                    text-align: left;
+                                    text-indent: 20px;
+                                    white-space: nowrap;  // 줄바꿈 없다.
+                                    overflow: hidden;  // 한줄 넘침(오버플로우)  안보이게 감춤
+                                    text-overflow: ellipsis;  // 말줄임표 ...
+                                    padding: 0 50px 0 0;
+                                }
+                                &:nth-child(3){width:100px}
+                                &:nth-child(4){width:100px;font-size: 13px;}                                    
+                            }    
+                           
+                        }
+                    }
+
+                    // 그룹지정된 페이지 번호
+                    .page-button-box{
+                        margin: 50px 0;
+                        width:100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width:30px;
+                            height:30px;
+                            color:#333;
+                            font-size: 14px;
+                            border:1px solid #ccc;
+                            margin: 0 5px;
+                            cursor: pointer;
+                            background: #fff;
+                            &.prev-btn{
+                                margin: 0 20px 0 0;
+                            }
+                            &.next-btn{
+                                margin: 0 0 0 20px;
+                            }
+                            &.on{ // 현재 클릭된버튼 또는 현재버튼 current
+                                background-color: #5f0080;
+                                border-color:#5f0080;
+                                color:#fff;
+                            }
+                        }
+                    }
+               } 
+            }
+        }
+        .button-box{
+            width:100%;
+            padding: 50px 0 0 0;
+            text-align: right;
+            button {
+                height: 43px;
+                background: #5f0080;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                padding: 0  30px;
+                border-radius: 3px;                
+                border:0;
+                cursor: pointer;
+            }
+        }
+    }
+}

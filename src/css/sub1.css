@@ -1,0 +1,287 @@
+#wrap {
+  width: 100%;
+}
+#wrap #sub1 {
+  width: 100%;
+}
+#wrap #sub1 #section1 {
+  width: 100%;
+  padding: 0 0 70px 0;
+}
+#wrap #sub1 #section1 .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #sub1 #section1 .container .gap {
+  width: 100%;
+}
+#wrap #sub1 #section1 .container .gap .content {
+  width: 100%;
+}
+#wrap #sub1 #section1 .container .gap .content a {
+  display: block;
+  width: 100%;
+}
+#wrap #sub1 #section1 .container .gap .content a img {
+  width: 100%;
+}
+#wrap #sub1 #section2 {
+  width: 100%;
+}
+#wrap #sub1 #section2 .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #sub1 #section2 .container .gap {
+  width: 100%;
+}
+#wrap #sub1 #section2 .container .gap .title {
+  width: 100%;
+  padding: 0 0 60px 0;
+  text-align: center;
+}
+#wrap #sub1 #section2 .container .gap .title h2 {
+  font-size: 28px;
+  color: #333;
+}
+#wrap #sub1 #section2 .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #sub1 #section2 .container .gap .content .left {
+  position: sticky;
+  top: 80px;
+  left: 0;
+  width: 262.5px;
+  padding: 0 50px 0 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+#wrap #sub1 #section2 .container .gap .content .left::-webkit-scrollbar {
+  width: 0;
+}
+#wrap #sub1 #section2 .container .gap .content .left::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+#wrap #sub1 #section2 .container .gap .content .left::-webkit-scrollbar-thumb {
+  background-color: #5f0080;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-title {
+  padding: 0 0 18px 0;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content {
+  padding: 15px 0 0 0;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div > a {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div > a span {
+  font-weight: 500;
+  color: #000;
+  font-size: 15px;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div > a img {
+  width: 18px;
+  transition: all 0.3s ease-in-out;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div > a.on img {
+  transform: rotate(-180deg);
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  overflow: hidden;
+  height: auto;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul {
+  width: 100%;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul li {
+  width: 100%;
+  padding: 8px 0;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul li label {
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul li label:hover {
+  color: #5f0080;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul li label input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../../public/images/sub1/chk_off.svg);
+  margin: 0 10px 0 0;
+}
+#wrap #sub1 #section2 .container .gap .content .left .left-content div .sub ul li label input[type=checkbox]:checked {
+  background-image: url(../../public/images/sub1/chk_on.svg);
+}
+#wrap #sub1 #section2 .container .gap .content .right {
+  width: 787.5px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 15px 0;
+  margin: 0 9px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title span {
+  font-size: 14px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title span a {
+  color: #999;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title span a img {
+  width: auto;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title span a.on {
+  font-weight: 600;
+  color: #333;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-title span i {
+  font-size: 12px;
+  color: #ccc;
+  margin: 0 10px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content {
+  width: 100%;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li {
+  width: 33.333%;
+  padding: 0 0 90px 0;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a {
+  display: block;
+  width: auto;
+  margin: 0 9px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .img-box {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .img-box > img {
+  z-index: 1;
+  position: relative;
+  transition: all 0.6S;
+  width: 100%;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .img-box span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .img-box span img {
+  width: auto;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a:hover .img-box > img {
+  transform: scale(1.05);
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box {
+  width: 100%;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul {
+  width: 100%;
+  padding: 15px 0 0 0;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li {
+  width: 100%;
+  padding: 5px 0;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li:nth-child(1) {
+  font-size: 14px;
+  color: #999;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li:nth-child(3) {
+  font-size: 12px;
+  color: #999;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li:last-child {
+  font-size: 12px;
+  color: #5f0080;
+  font-weight: 500;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li strong,
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li em {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li span.rate-price {
+  color: #fa622f;
+  font-size: 16px;
+  font-weight: 800;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li span.panme-price {
+  color: #333;
+  font-size: 16px;
+  font-weight: 800;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content > ul > li > a .tit-box ul li s {
+  color: #999;
+  font-size: 14px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content .page-button-box {
+  margin: 50px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content .page-button-box a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  background: #fff;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content .page-button-box a.prev-btn {
+  margin: 0 20px 0 0;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content .page-button-box a.next-btn {
+  margin: 0 0 0 20px;
+}
+#wrap #sub1 #section2 .container .gap .content .right .right-content .page-button-box a.on {
+  background-color: #5f0080;
+  border-color: #5f0080;
+  color: #fff;
+}

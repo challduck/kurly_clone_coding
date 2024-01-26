@@ -1,0 +1,235 @@
+#product {
+    width:100%;
+    padding: 30px 0 0 0;
+    .container {
+        width:100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        section {
+            width:100%; 
+            &#section1 {}
+            &#section2 {}
+            &#section3 {}
+            &#section4 {}
+            &#section5 {}
+            &#section6 {}
+            &#section7 {}
+            &#section8 {}
+            &#section9 {}
+            &#section10 {}
+            &#section11 {}
+            &#section12 {}
+            .content{
+                width:100%;
+                display: flex;
+                .left  {
+                    width: 490px;
+                    padding:0 50px 0 0;
+                    .img-box {
+                        width:100%;
+                        img {width:100%;}
+                    }
+                }
+                .right {
+                    width: 560px;
+                    .top {
+                        width:100%;
+                        ul {
+                            width:100%;
+                            li {
+                                width:100%;
+                                padding:10px 0;
+                                &:first-child {
+                                    padding-top: 0;
+                                }
+                                h4{
+                                    color:#999;
+                                    font-size:14px;
+                                }
+                                h2{
+                                    color:#333;
+                                    font-size:24px;
+                                    font-weight: 500;
+                                }
+                                p{
+                                    color:#999;
+                                    font-size:14px;
+                                }
+                                span{
+                                    color:#fa622f;
+                                    font-size:28px;
+                                    font-weight: 600;
+                                }
+                                strong{
+                                    color:#333;
+                                    font-size:28px;
+                                    font-weight: 600;
+                                }
+                                em{
+                                    color:#bbb;
+                                    font-size:18px;
+                                    font-weight: 600;
+                                    text-decoration: line-through;                                    
+                                }
+                                h5{
+                                    color:#5f0080;
+                                    font-size:14px;
+                                    font-weight: 500;  
+                                }
+                                a{
+                                    display: block;
+                                    line-height: 42px;
+                                    font-size:14px;
+                                    width:350px;  
+                                    background: rgba(189, 118, 255, 0.08) url(../../public/images/product/icon_arrow_right.svg) no-repeat 90% 50%;
+                                    padding: 0 0 0 15px;
+                                    strong {                                                                                
+                                        font-size: 14px;
+                                        color:#5f0080;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middle {
+                        padding: 20px 0;
+                        ul {
+                            width:100%;
+                            li {
+                                width:100%;
+                                display: flex;
+                                padding:22px 0;
+                                border-top: 1px solid #eee;
+                                &:last-child{
+                                    border-bottom: 1px solid #eee;
+                                }
+                                > div {  
+                                    font-size: 14px;                                  
+                                    color:#666;  
+                                    line-height: 140%;                                  
+                                    &.col1{
+                                        width:128px;
+                                        strong{}
+                                    }
+                                    &.col2{
+                                        width: 560px - 128px;
+                                        padding: 0 0 0 15px;
+                                        strong{}
+                                        .count-number-price {
+                                            width:100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            div {                                                
+                                                &.col2-left{
+                                                    width:93px;
+                                                    height: 28px;
+                                                    display: flex;                                                                                                        
+                                                    color: #333;
+                                                    font-weight: 700;
+                                                    border: 1px solid #ddd;                                                    
+                                                    button {
+                                                        width:33.333%;height:100%;
+                                                        border:0;
+                                                        background: #fff;
+                                                        cursor: pointer;
+                                                        font-size: 17px;
+                                                    }
+                                                    span {
+                                                        width:33.333%;
+                                                        height:100%;  
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                    }
+                                                }
+                                                &.col2-right{
+                                                    font-size: 14px;
+                                                    em {
+                                                        color:#999;
+                                                        text-decoration: line-through;
+                                                        margin:  0 10px 0 0;
+                                                    }
+                                                    strong {
+                                                        color:#333;
+                                                        font-size: 15px;
+                                                        font-weight: 600;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom {
+                        div {
+                            
+
+                            &.total-calc {
+                                width:100%; 
+                                padding:10px 0 30px 0;   
+                                h2 {
+                                    width:100%;    
+                                    text-align: right;
+                                    color:#333;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    strong {
+                                        font-size: 32px;
+                                        margin:0 10px 0 20px;
+                                    }
+                                    em{
+                                        font-size: 20px;
+                                    }
+                                }
+                                p {
+                                    width: 100%;
+                                    text-align: right;
+                                    font-size: 14px;
+                                    padding: 10px 0 0 0;
+                                    em {
+                                        background: #ffbf00;
+                                        display: inline-block;
+                                        align-items: center;
+                                        letter-spacing: -1px;
+                                        padding: 5px 10px;
+                                        border-radius: 12px;
+                                    }
+                                }
+                            }
+                            &.cart-btn-box {
+                                display: flex;
+                                justify-content: space-between;
+                                button {
+                                    background: #fff;
+                                    border: 1px solid #ddd;
+                                    border-radius: 3px;
+                                    height:56px;
+                                    cursor: pointer;
+                                    &:nth-child(1){
+                                        width:56px;
+                                        img {}
+                                    }
+                                    &:nth-child(2){
+                                        width:56px;
+                                        img {}
+                                    }
+                                    &:nth-child(3){
+                                        width:432px;
+                                        border: 1px solid #5f0080;
+                                        background: #5f0080;
+                                        color:#fff;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

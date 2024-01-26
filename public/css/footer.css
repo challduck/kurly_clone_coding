@@ -1,0 +1,151 @@
+#wrap {
+  width: 100%;
+}
+#wrap #footer {
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+#wrap #footer .row {
+  width: 100%;
+  padding: 30px 0 40px 0;
+}
+#wrap #footer .row .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #footer .row .container .content {
+  width: 100%;
+}
+#wrap #footer .row.row1 .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #footer .row.row1 .container .content .left {
+  width: 45%;
+}
+#wrap #footer .row.row1 .container .content .left ul {
+  width: 100%;
+}
+#wrap #footer .row.row1 .container .content .left ul li {
+  padding: 0 0 15px 0;
+  letter-spacing: -1px;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(1) h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(2) {
+  padding: 15px 0 30px 0;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(2) a {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(2) em {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  margin: 0 0 0 10px;
+  vertical-align: bottom;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(3), #wrap #footer .row.row1 .container .content .left ul li:nth-child(4), #wrap #footer .row.row1 .container .content .left ul li:nth-child(5) {
+  display: flex;
+  align-items: center;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(3) button, #wrap #footer .row.row1 .container .content .left ul li:nth-child(4) button, #wrap #footer .row.row1 .container .content .left ul li:nth-child(5) button {
+  width: 140px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(3) span, #wrap #footer .row.row1 .container .content .left ul li:nth-child(4) span, #wrap #footer .row.row1 .container .content .left ul li:nth-child(5) span {
+  font-size: 14px;
+  color: #999;
+  line-height: 120%;
+  margin: 0 0 0 10px;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(3) span i, #wrap #footer .row.row1 .container .content .left ul li:nth-child(4) span i, #wrap #footer .row.row1 .container .content .left ul li:nth-child(5) span i {
+  color: #bbb;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(6) {
+  line-height: 130%;
+  font-size: 12px;
+  color: #999;
+}
+#wrap #footer .row.row1 .container .content .left ul li:nth-child(6) a {
+  color: #999;
+}
+#wrap #footer .row.row1 .container .content .right {
+  width: 45%;
+}
+#wrap #footer .row.row1 .container .content .right ul li:nth-child(1) a {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  margin: 0 13px 0 0;
+  letter-spacing: -1px;
+}
+#wrap #footer .row.row1 .container .content .right ul li:nth-child(2) {
+  padding: 30px 0;
+  font-size: 12px;
+  color: #999;
+  line-height: 140%;
+}
+#wrap #footer .row.row1 .container .content .right ul li:nth-child(2) a {
+  color: #5f0080;
+  font-weight: 500;
+}
+#wrap #footer .row.row1 .container .content .right ul li:nth-child(3) a {
+  margin: 0 10px 0 0;
+}
+#wrap #footer .row.row1 .container .content .right ul li:nth-child(3) a img {
+  width: 30px;
+  height: 30px;
+}
+#wrap #footer .row.row2 {
+  padding: 0;
+}
+#wrap #footer .row.row2 .container {
+  border-top: 1px solid #eee;
+  padding: 30px 0 40px 0;
+}
+#wrap #footer .row.row2 .container .content ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #footer .row.row2 .container .content ul li {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+#wrap #footer .row.row2 .container .content ul li img {
+  width: auto;
+  height: 34px;
+  margin: 0 10px 0 0;
+}
+#wrap #footer .row.row2 .container .content ul li span {
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+#wrap #footer .row.row2 .container .content ul li:nth-child(3) img {
+  height: 32px;
+}
+#wrap #footer .row.row3 {
+  background: #f6f6f6;
+  text-align: center;
+}
+#wrap #footer .row.row3 .container .content {
+  font-size: 10px;
+  color: #999;
+  line-height: 140%;
+}
+#wrap #footer .row.row3 .container .content p:last-child {
+  padding: 10px 0 0 0;
+}

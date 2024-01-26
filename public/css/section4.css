@@ -1,0 +1,138 @@
+#wrap {
+  width: 100%;
+}
+#wrap .intro {
+  width: 100%;
+}
+#wrap .intro #section4 {
+  width: 100%;
+  padding: 80px 0;
+}
+#wrap .intro #section4 .container {
+  width: 100%;
+  max-width: 1068px;
+  margin: 0 auto;
+}
+#wrap .intro #section4 .container .gap {
+  width: 100%;
+}
+#wrap .intro #section4 .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap .intro #section4 .container .gap .content .left {
+  width: 25%;
+}
+#wrap .intro #section4 .container .gap .content .left ul {
+  margin: 0 9px;
+}
+#wrap .intro #section4 .container .gap .content .left ul li:nth-child(3) {
+  padding: 30px 0 50px 0;
+  display: flex;
+  align-items: center;
+}
+#wrap .intro #section4 .container .gap .content .left ul li h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+}
+#wrap .intro #section4 .container .gap .content .left ul li h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  padding: 10px 0 0 0;
+}
+#wrap .intro #section4 .container .gap .content .left ul li span {
+  font-size: 32px;
+  font-weight: 800;
+  color: #333;
+}
+#wrap .intro #section4 .container .gap .content .left ul li span img {
+  width: 35px;
+  margin: 0 10px 0 0;
+}
+#wrap .intro #section4 .container .gap .content .left ul li p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaa;
+}
+#wrap .intro #section4 .container .gap .content .right {
+  width: 75%;
+}
+#wrap .intro #section4 .container .gap .content .right > ul {
+  width: 100%;
+  display: flex;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li {
+  width: 33.33333%;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap {
+  padding: 0 9px;
+  width: 100%;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a {
+  display: block;
+  width: 100%;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .img-box {
+  width: 100%;
+  position: relative;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .img-box > img {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .img-box > span {
+  z-index: 2;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .img-box > span img {
+  width: auto;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box {
+  width: 100%;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul {
+  width: 100%;
+  padding: 15px 0 0 0;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li {
+  width: 100%;
+  padding: 5px 0;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li:nth-child(1) {
+  font-size: 14px;
+  color: #999;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li:nth-child(3) {
+  font-size: 12px;
+  color: #999;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li:last-child {
+  font-size: 12px;
+  color: #5f0080;
+  font-weight: 500;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li strong,
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li em {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li span.rate-price {
+  color: #fa622f;
+  font-size: 16px;
+  font-weight: 800;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li span.panme-price {
+  color: #333;
+  font-size: 16px;
+  font-weight: 800;
+}
+#wrap .intro #section4 .container .gap .content .right > ul > li .col-gap a .tex-box ul li s {
+  color: #999;
+  font-size: 14px;
+}

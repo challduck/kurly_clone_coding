@@ -1,0 +1,294 @@
+#wrap{
+    width:100%;
+    #sub1 {
+        width:100%;
+        #section1{
+            width:100%;
+            padding: 0 0 70px 0;
+            .container{
+                width:100%;
+                max-width:1050px;
+                margin:0 auto;
+                .gap {
+                    width:100%;
+                    .content {
+                        width:100%;
+                        a {
+                            display: block;
+                            width:100%;
+                            img {
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+
+        #section2 {
+            width:100%;
+            .container {
+                width:100%;
+                max-width:1050px;
+                margin:0 auto;
+                .gap {
+                    width:100%;
+                    .title {
+                        width:100%;
+                        padding: 0 0 60px 0;
+                        text-align: center;
+                       
+                        h2 {
+                            font-size: 28px;
+                            color:#333;                            
+                        }
+
+                    }
+                    .content {
+                        width:100%;
+                        display: flex;
+                        
+                        .left {
+                            position: sticky;  // 스티키 설정
+                            top: 80px;
+                            left: 0;
+                            width: 262.5px * 1;
+                            padding: 0 50px 0 0;
+                            height: 100vh;
+                            
+                            // 수직 스크롤 오버시에 생성
+                            overflow-y: auto;
+                            // 스크롤바 디자인
+                            &::-webkit-scrollbar {
+                                width:0;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background-color: #fff;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: #5f0080;
+                            }
+
+                            .left-title {
+                                padding: 0 0 18px 0;
+                                border-bottom: 1px solid #ddd;
+                                width:100%;
+                                display: flex;
+                                justify-content: space-between;
+                                strong {}
+                                span {
+                                    img{}
+                                    em{}
+                                }
+                            }
+                            .left-content {
+                                padding: 15px 0 0 0;
+                                div {
+                                    > a { //카테고리 버튼
+                                        height: 52px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        font-weight: 600;
+                                        span {
+                                            font-weight: 500;
+                                            color:#000;
+                                            font-size: 15px;
+                                        }
+                                        img {
+                                            width:18px;
+                                            transition: all 0.3s ease-in-out;
+                                        }
+                                        &.on{
+                                            img {
+                                                transform: rotate(-180deg);
+                                            }
+                                        }
+                                    }
+                                    .sub {
+                                        width:100%;
+                                        display: block;
+                                        transition: all 0.3s ease-in-out;
+                                        background: #fff;
+                                        overflow: hidden;
+                                        height: auto;
+                                        ul {
+                                            width:100%;
+                                            li{
+                                                width:100%;
+                                                padding: 8px 0;
+                                                label {
+                                                    width:100%;
+                                                    color:#333;
+                                                    font-size: 14px;
+                                                    transition: all 0.3s;
+                                                    cursor: pointer;
+                                                    &:hover {
+                                                        color:#5f0080;
+                                                    }
+                                                    input[type='checkbox'] {
+                                                        width:18px;
+                                                        height:18px;
+                                                        border-radius: 50%;
+                                                        appearance: none;
+                                                        background: url(../../public/images/sub1/chk_off.svg);
+                                                        margin: 0 10px 0 0;
+                                                        &:checked {
+                                                            background-image: url(../../public/images/sub1/chk_on.svg);
+                                                        }
+                                                    }
+                                                }
+                                            } 
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            width: 262.5px * 3;
+                            .right-title {
+                                width:auto;
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0 0 15px 0;
+                                margin: 0 9px;
+                                strong {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color:#333;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    a {
+                                        color:#999;
+                                        img {width:auto;}
+                                        &.on {
+                                            font-weight: 600;
+                                            color:#333;
+                                        }
+                                    }
+                                    i {
+                                        font-size: 12px;color:#ccc;
+                                        margin: 0 10px;
+                                    }
+                                }
+                            }
+                            .right-content {
+                                width: 100%;
+                                > ul {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-flow: row wrap;                                    
+                                   > li {
+                                      width: 33.333%; 
+                                      padding:0 0 90px 0;
+                                       > a {
+                                            display: block;
+                                            width: auto;
+                                            margin: 0 9px;
+                                            .img-box {
+                                                width: 100%;
+                                                height: 320px;
+                                                overflow: hidden;
+                                                position: relative;
+                                                > img {
+                                                    z-index: 1;
+                                                    position: relative;
+                                                    transition: all 0.6S;
+                                                    width:100%;
+                                                }
+                                                span {
+                                                    position: absolute;
+                                                    right:20px;
+                                                    bottom:20px;
+                                                    z-index: 2;
+                                                    img {
+                                                        width:auto;
+                                                    }
+                                                }
+                                            }
+                                            &:hover{
+                                                .img-box {
+                                                    > img {
+                                                      transform: scale(1.05);
+                                                    }
+                                                }
+                                            }
+                                            .tit-box {
+                                                width:100%;
+                                                ul {
+                                                    width:100%;
+                                                    padding: 15px 0 0 0 ;
+                                                    li {
+                                                        width:100%;
+                                                        padding:5px 0;
+                                                        &:nth-child(1){
+                                                            font-size: 14px;
+                                                            color: #999;
+                                                        }
+                                                        &:nth-child(3){
+                                                            font-size: 12px;
+                                                            color: #999;
+                                                        }
+                                                        &:last-child{
+                                                            font-size: 12px;
+                                                            color: #5f0080;
+                                                            font-weight: 500;
+                                                        }
+                                                        strong ,
+                                                        em {font-size: 16px;color:#333;font-weight: 600;}
+                                                        span {
+                                                            &.rate-price {color:#fa622f;font-size: 16px;font-weight: 800;}
+                                                            &.panme-price {color:#333;font-size: 16px;font-weight: 800;}
+                                                        }
+                                                        s {color:#999;font-size: 14px;}
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                // 그룹지정된 페이지 번호
+                                .page-button-box{
+                                    margin: 50px 0;
+                                    width:100%;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    a {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width:30px;
+                                        height:30px;
+                                        color:#333;
+                                        font-size: 14px;
+                                        border:1px solid #ccc;
+                                        margin: 0 5px;
+                                        cursor: pointer;
+                                        background: #fff;
+                                        &.prev-btn{
+                                            margin: 0 20px 0 0;
+                                        }
+                                        &.next-btn{
+                                            margin: 0 0 0 20px;
+                                        }
+                                        &.on{ // 현재 클릭된버튼 또는 현재버튼 current
+                                            background-color: #5f0080;
+                                            border-color:#5f0080;
+                                            color:#fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

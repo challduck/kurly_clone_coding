@@ -1,0 +1,370 @@
+#signUp {
+  padding: 70px 0 100px 0;
+}
+#signUp #section1 {
+  width: 100%;
+}
+#signUp #section1 .container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#signUp #section1 .container .gap {
+  width: 100%;
+}
+#signUp #section1 .container .gap .title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #222;
+}
+#signUp #section1 .container .gap .title h2 {
+  width: 100%;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  padding: 0 0 50px 0;
+}
+#signUp #section1 .container .gap .title p {
+  width: 100%;
+  text-align: right;
+  padding: 0 0 12px 0;
+}
+#signUp #section1 .container .gap .title p span {
+  font-size: 12px;
+  color: #626262;
+}
+#signUp #section1 .container .gap .title p span i {
+  color: #ee6a7b;
+  vertical-align: top;
+  margin: 0 2px 0 0;
+}
+#signUp #section1 .container .gap .content form > ul > li {
+  padding: 0 20px;
+}
+#signUp #section1 .container .gap .content form > ul > li.hr {
+  padding: 0;
+}
+#signUp #section1 .container .gap .content form > ul > li.service-box div {
+  padding-right: 0;
+}
+#signUp #section1 .container .gap .content form > ul > li.service-box div label {
+  height: 24px;
+}
+#signUp #section1 .container .gap .content form > ul > li:last-child {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+#signUp #section1 .container .gap .content form > ul > li:last-child button {
+  width: 240px;
+  height: 56px;
+  background: #5f0080;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+}
+#signUp #section1 .container .gap .content form > ul > li hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: 10px 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div {
+  width: 100%;
+  position: relative;
+  padding: 0 130px 0 140px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > label {
+  margin: 10px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  height: 45px;
+  align-items: center;
+  color: #333;
+  font-weight: 500;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > label i {
+  color: #ee6a7b;
+  vertical-align: top;
+  margin: 0 0 0 2px;
+  transform: translateY(-1px);
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box {
+  width: 100%;
+  position: relative;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service {
+  text-align: left;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li {
+  padding: 7px 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li.service56 {
+  padding-left: 30px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li.service56 label {
+  margin-right: 80px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li label {
+  margin: 0;
+  padding: 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li label input[type=checkbox] {
+  margin: 0 10px 0 0;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../../public/images/sign_up/check_gray.svg) no-repeat 50% 50%;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li label input[type=checkbox]:checked {
+  background-image: url(../../public/images/sign_up/check_purple.svg);
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li h5 {
+  padding: 10px 0 0 34px;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.service ul li h6 {
+  padding: 10px 0 0 50px;
+  letter-spacing: -1px;
+  background: url(../../public/images/sign_up/ico_sub_dot.svg) no-repeat 35px 300%;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.chooga {
+  display: flex;
+  justify-content: space-between;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.birth {
+  padding: 10px 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box.gender {
+  display: flex;
+  justify-content: space-between;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box label {
+  margin: 10px 0;
+  padding: 10.5px 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box label input[type=radio] {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box label input[type=radio]:checked {
+  border: 6px solid #5f0080;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box input {
+  z-index: 1;
+  position: relative;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=text], #signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=password], #signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=email] {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0 15px;
+  color: #333;
+  outline-offset: -1px;
+  border-radius: 3px;
+  outline: 1px solid transparent;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=text]:focus, #signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=password]:focus, #signUp #section1 .container .gap .content form > ul > li > div .center-box input[type=email]:focus {
+  outline: 1px solid #333;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box input#userAddress1, #signUp #section1 .container .gap .content form > ul > li > div .center-box input#userAddress2 {
+  display: none;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box input#userAddress1.on, #signUp #section1 .container .gap .content form > ul > li > div .center-box input#userAddress2.on {
+  display: block;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .hp-timer-counter {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 2;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  color: #f03f40;
+  letter-spacing: 1px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box button {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 0;
+  background: #5f0080;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box button.on {
+  display: none;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box h5 {
+  color: #5f0080;
+  font-size: 12px;
+  padding: 10px 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box h6 {
+  color: #666;
+  font-size: 12px;
+  padding: 10px 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li {
+  display: flex;
+  align-items: center;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li:nth-child(odd) {
+  width: 32%;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li:nth-child(even) {
+  width: 2%;
+  text-align: center;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li input {
+  width: 100%;
+  height: 43px;
+  border: 0;
+  background: #fff;
+  margin: 0;
+  outline: 0;
+  text-align: center;
+  color: #333;
+  font-size: 15px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li input::-moz-placeholder {
+  color: #666;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li input::placeholder {
+  color: #666;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li input:focus {
+  outline: 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .center-box .birth-box ul li i {
+  font-size: 20px;
+  color: #ccc;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .chooga-box {
+  width: 100%;
+  position: relative;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .chooga-box input {
+  z-index: 1;
+  position: relative;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .chooga-box input[type=text] {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0 15px;
+  color: #333;
+  outline-offset: -1px;
+  border-radius: 3px;
+  outline: 1px solid transparent;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .chooga-box input[type=text]:focus {
+  outline: 1px solid #333;
+}
+#signUp #section1 .container .gap .content form > ul > li > div .chooga-box h6 {
+  color: #666;
+  font-size: 12px;
+  padding: 10px 0;
+  line-height: 140%;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button {
+  margin: 10px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 45px;
+  border: 1px solid #5f0080;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f0080;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.hp-num-btn {
+  color: #ddd;
+  border-color: #ddd;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.hp-num-btn.on {
+  color: #5f0080;
+  border-color: #5f0080;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.hp-num-btn3 {
+  display: none;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.hp-num-btn3.on {
+  display: block;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.addr-research-btn {
+  display: none;
+  margin: 0;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.addr-research-btn.on {
+  display: block;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.chooga-idok-btn {
+  top: 65px;
+  color: #ddd;
+  border-color: #ddd;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > button.chooga-idok-btn.on {
+  color: #5f0080;
+  border-color: #5f0080;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > p.error-msg {
+  color: #f03f40;
+  font-size: 12px;
+  font-weight: 500;
+  display: none;
+  padding: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+#signUp #section1 .container .gap .content form > ul > li > div > p.error-msg.on {
+  display: block;
+}

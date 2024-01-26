@@ -1,0 +1,41 @@
+#wrap {
+    width:100%;
+    #topModal {
+        width:100%;
+        background: #5f0080;
+        .container {
+            width: 100%;
+            max-width: 1050px;
+            margin: 0 auto;
+            .gap {
+                width: 100%;
+                .content {
+                    width: 100%;
+                    h1 {
+                        width: 100%;
+                        font-size: 14px;
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            justify-content: center;
+                            color:#fff;
+                            strong {
+                                font-weight: 600;
+                            }
+                            svg {
+                                position: absolute;
+                                right: 0;
+                                top: 11px;                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

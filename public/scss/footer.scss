@@ -1,0 +1,176 @@
+#wrap {
+    width:100%;
+    #footer {
+        border-top: 1px solid #ddd;
+        width: 100%;
+        .row {
+            width:100%;
+            padding: 30px 0 40px 0;
+            .container{
+                width:100%;
+                max-width: 1050px;
+                margin: 0 auto;
+                .content{
+                    width:100%;
+                }
+            }
+            &.row1 {
+                .container {
+                    .content {
+                        display: flex;
+                        justify-content: space-between;
+                        .left {
+                            width: 45%;
+                            ul {
+                                width: 100%;
+                                li {
+                                    padding: 0 0 15px 0;
+                                    letter-spacing: -1px;
+                                    &:nth-child(1){
+                                        h2 {
+                                            font-size: 20px;
+                                            color:#333;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    &:nth-child(2){
+                                        padding: 15px 0 30px 0;
+                                        a {
+                                            font-size: 28px;
+                                            color:#333;
+                                            font-weight: 700;  
+                                        }
+                                        em {
+                                            font-size: 16px;
+                                            color:#333;
+                                            font-weight: 400;
+                                            margin: 0 0 0 10px;
+                                            vertical-align: bottom;
+                                        }
+                                    }
+                                    &:nth-child(3),
+                                    &:nth-child(4),
+                                    &:nth-child(5){
+                                        display: flex;
+                                        align-items: center;
+                                        button {
+                                            width: 140px;
+                                            height: 40px;
+                                            background: #fff;
+                                            border: 1px solid  #ccc;
+                                            font-size: 14px;
+                                            color: #333;
+                                            font-weight: 500;
+                                        }
+                                        span {
+                                            font-size: 14px;
+                                            color: #999;
+                                            line-height: 120%;
+                                            margin: 0 0 0 10px;
+                                            i {
+                                                color: #bbb;
+                                            }
+                                        }
+                                    }
+                                    &:nth-child(6){
+                                        line-height: 130%;
+                                        font-size: 12px;
+                                        color: #999;
+                                        a{                                            
+                                            color: #999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            width: 45%;
+                            ul {
+                                li {
+
+                                    &:nth-child(1){
+                                        a {
+                                            font-size: 14px;
+                                            color: #333;
+                                            font-weight: 500;
+                                            margin: 0 13px 0 0;    
+                                            letter-spacing: -1px;                                        
+                                        }  
+                                    }
+                                    &:nth-child(2){
+                                        padding: 30px 0;
+                                        font-size: 12px;
+                                        color: #999;
+                                        line-height: 140%;
+                                        a {
+                                            color:#5f0080;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    &:nth-child(3){
+                                        a {
+                                            margin: 0  10px 0 0;
+                                            img {
+                                                width: 30px;
+                                                height: 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.row2 {
+                padding:0;                
+                .container {
+                    border-top: 1px solid #eee;
+                    padding: 30px 0 40px 0;
+                    .content {
+                        ul {
+                            width: 100%;
+                            display: flex;
+                            li {
+                                width: 25%;
+                                display: flex;
+                                align-items: center;
+                                img {
+                                     width:auto;   
+                                     height: 34px;
+                                     margin: 0 10px 0 0;
+                                }
+                                span {
+                                    font-size: 10px;
+                                    line-height: 140%;
+                                    letter-spacing: -1px;
+                                }
+                                &:nth-child(3){
+                                    img {
+                                        height: 32px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.row3 {
+                background: #f6f6f6;
+                text-align: center;
+                .container {
+                    .content {
+                        font-size: 10px;
+                        color: #999;
+                        line-height: 140%;
+                        p{
+                            &:last-child {
+                                padding: 10px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

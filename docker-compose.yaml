@@ -1,0 +1,72 @@
+version: "3"
+services:
+  kurly_front:
+    container_name: kurly_front
+    # context: ./kurly_front # 실제 Node.js 앱의 경로로 변경
+    build:
+      # context: ./kurly_deploy
+      dockerfile: Dockerfile.node
+    ports:
+      - "3530:3000"
+    volumes:
+      - ./kurly:/usr/src/app
+    restart: always
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    depends_on:
+      - kurly_db
+      - kurly_back
+    networks:
+      - web-net
+      - db-net
+  kurly_back:
+    container_name: kurly_back
+    build:
+      # context: ./kurly_deploy
+      dockerfile: Dockerfile.tomcat
+    ports:
+      - "18880:8080"
+    volumes:
+      - ./web:/usr/local/tomcat/webapps/ROOT/WEB-INF
+      - ./server:/usr/local/tomcat/conf
+      - ./library/lib:/usr/local/tomcat/lib
+      - ./classes:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes
+    restart: always
+    command: /bin/bash
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=kurly_db
+      - MYSQL_USER=challduck
+      - MYSQL_PASSWORD=1234
+    depends_on:
+      - kurly_db
+    networks:
+      - web-net
+      - db-net
+  kurly_db:
+    container_name: kurly_db
+    image: mysql:8.0.33
+    ports:
+      - "13309:3306"
+    volumes:
+      - ./db/mysql:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data.sql:/docker-entrypoint-initdb.d/data.sql
+    restart: always
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=kurly_db
+      - MYSQL_USER=challduck
+      - MYSQL_PASSWORD=1234
+    networks:
+      - db-net
+networks:
+  web-net:
+    external: true
+  db-net:
+    external: true

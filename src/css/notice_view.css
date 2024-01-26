@@ -1,0 +1,114 @@
+#noticeView {
+  width: 100%;
+  padding: 60px 0 100px 0;
+}
+#noticeView > .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#noticeView > .container .title {
+  padding: 0 0 70px 0;
+  text-align: center;
+}
+#noticeView > .container .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+#noticeView > .container .title p {
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  color: #999;
+}
+#noticeView > .container .content {
+  width: 100%;
+}
+#noticeView > .container .content ul {
+  width: 100%;
+}
+#noticeView > .container .content ul li {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+#noticeView > .container .content ul li:nth-child(1) {
+  border-top: 2px solid #333;
+}
+#noticeView > .container .content ul li:nth-child(1), #noticeView > .container .content ul li:nth-child(2), #noticeView > .container .content ul li:nth-child(3), #noticeView > .container .content ul li:nth-child(4) {
+  display: flex;
+  height: 40px;
+}
+#noticeView > .container .content ul li:last-child {
+  border-bottom: 1px solid #333;
+}
+#noticeView > .container .content ul li > div.left {
+  width: 150px;
+  padding: 0 0 0 20px;
+  background: #f7f5f8;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+#noticeView > .container .content ul li > div.right {
+  width: 900px;
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+#noticeView > .container .content ul li > div.contents {
+  width: 100%;
+  height: auto;
+  padding: 30px 0 60px 0;
+  line-height: 160%;
+}
+#noticeView > .container .content .button-box {
+  width: 100%;
+  padding: 20px 0 0 0;
+  display: flex;
+}
+#noticeView > .container .content .button-box .left {
+  width: 50%;
+  text-align: left;
+}
+#noticeView > .container .content .button-box .left button {
+  width: 150px;
+  height: 42px;
+  background: #5f0080;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#noticeView > .container .content .button-box .left button:hover {
+  opacity: 0.9;
+}
+#noticeView > .container .content .button-box .left button:nth-child(1) {
+  margin: 0 10px 0 0;
+}
+#noticeView > .container .content .button-box .right {
+  width: 50%;
+  text-align: right;
+}
+#noticeView > .container .content .button-box .right button {
+  width: 150px;
+  height: 42px;
+  background: #5f0080;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#noticeView > .container .content .button-box .right button:hover {
+  opacity: 0.9;
+}
